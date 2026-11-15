@@ -51,10 +51,10 @@ void cadastrarLivro(List<Livro> livros) {
         novoLivro = new LivroFisico(titulo, autor, anoPublicacao, quantidadeExemplares, localizacao);
     } else if (opcao == 2) {
         String formato = IO.readln("Digite o formato do arquivo: ");
-        double tamanhoArquivo = Double.parseDouble(IO.readln("Digite o tamanho do arquivo: "));        
+        double tamanhoArquivo = Double.parseDouble(IO.readln("Digite o tamanho do arquivo:(EM MEGAS) "));        
         novoLivro = new LivroDigital(titulo, autor, anoPublicacao, formato, tamanhoArquivo);
     } else {
-        int duracao = Integer.parseInt(IO.readln("Digite a duração do audiolivro: "));
+        int duracao = Integer.parseInt(IO.readln("Digite a duração do audiolivro: (em minutos) "));
         String narrador = IO.readln("Digite o nome do narrador: ");
         novoLivro = new AudioLivro(titulo, autor, anoPublicacao, duracao, narrador);
     }  
