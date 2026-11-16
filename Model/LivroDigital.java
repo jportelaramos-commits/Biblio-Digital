@@ -1,3 +1,5 @@
+package model;
+
 public class LivroDigital extends Livro {
     
     private String formato;

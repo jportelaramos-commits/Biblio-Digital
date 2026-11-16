@@ -1,3 +1,5 @@
+package model;
+
 public class AudioLivro extends Livro {
     
     private int duracao;
